@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GCBA 2022</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+      <link rel="stylesheet" href="css/lightbox.css">
+
+    <script src="js/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <script src="js/lightslider.js"></script>
+      <script src="js/lightbox.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/default.css" />
+  		<link rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
+  		<link rel="stylesheet" type="text/css" href="css/component.css" />
+  		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+  		<script src="js/modernizr.custom.js"></script>
+
+  </head>
+  <body class="home" id="home">
+      <div class="loader">
+        <img src="img/balogo.svg" alt="" width="">
+      </div>
+      <div id="pt-main" class="pt-perspective">
+            <div class="pt-page pt-page-1 pt-page-current" id="page1">  <!-- The video -->
+                  <video autoplay muted loop id="myVideo">
+                    <source src="img/vidback.mp4" type="video/mp4">
+                  </video>
+
+                  <!-- Optional: some overlay text to describe the video -->
+                  <div class="camps">
+                    <div class="container page1" id="page11">
+                        <div class="row">
+                            <div class="col-lg-12 text-center logoba">
+                                <img src="img/balogo.svg" alt="" width="">
+                            </div>
+                        </div>
+                        <div class="row months" style="margin-top:40px">
+                            <div class="col-lg-2 text-center">
+                                <img src="img/enero.png" alt="" width="" onclick="gotoenero('bgenero2.jpg'); javascript:setval('enero')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/febrero.png" alt="" width="" onclick="gotofebrero('bgfebrero2.jpg'); javascript:setval('febrero')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/marzo.png" alt="" width="" onclick="gotomarzo('bgmarzo2.jpg'); javascript:setval('marzo')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/abril.png" alt="" width="" onclick="gotoabril('bgabril2.jpg'); javascript:setval('abril')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/mayo.png" alt="" width="" onclick="gotomayo('bgmayo2.jpg'); javascript:setval('mayo')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/junio.png" alt="" width="" onclick="gotojunio('bgjunio2.jpg'); javascript:setval('junio')">
+                            </div>
+                        </div>
+                        <!-- <div class="row months">
+                            <div class="col-lg-2 text-center">
+                                <img src="img/julio.png" alt="" width=""  onclick="gotojulio('bgjulio.jpg'); javascript:setval('julio')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/agosto.png" alt="" width=""  onclick="gotoagosto('bgagosto.jpg'); javascript:setval('agosto')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/septiembre.png" alt="" width="" onclick="gotoseptiembre('bgseptiembre.jpg'); javascript:setval('septiembre')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/octubre.png" alt="" width="" onclick="gotooctubre('bgoctubre.jpg'); javascript:setval('octubre')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/noviembre.png" alt="" width="" onclick="gotonoviembre('bgnoviembre.jpg'); javascript:setval('noviembre')">
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <img src="img/diciembre.png" alt="" width="" onclick="gotodiciembre('bgdiciembre.jpg'); javascript:setval('diciembre')">
+                            </div>
+                        </div> -->
+                    </div>
+                  </div>
+            </div>
+            <div class="pt-page pt-page-2" id="enero">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volverenero()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS ENERO 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/enero/1/index.html','BA Playa')">
+                            <img src="camp/enero/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>BA Playa</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/enero/2/index.html','Año Nuevo Chino')">
+                            <img src="camp/enero/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Año Nuevo Chino</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/enero/3/index.html','Dengue')">
+                            <img src="camp/enero/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Dengue</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/enero/4/index.html','Festival BA Capital Gastronómica')">
+                            <img src="camp/enero/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Festival BA Capital Gastronómica</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/enero/5/index.html','Verano en la Ciudad')">
+                            <img src="camp/enero/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Verano en la Ciudad</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/enero/6/index.html','Vamos las Plazas')">
+                            <img src="camp/enero/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vamos las Plazas</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="pt-page pt-page-2" id="febrero">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volverfebrero()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS FEBRERO 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/febrero/1/index.html','Carnaval 2022')">
+                            <img src="camp/febrero/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Carnaval 2022</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/febrero/2/index.html','Cierre de Carnaval ')">
+                            <img src="camp/febrero/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Cierre de Carnaval </span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/febrero/3/index.html','San Valentin ')">
+                            <img src="camp/febrero/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>San Valentin</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/febrero/4/index.html','FIBA')">
+                            <img src="camp/febrero/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>FIBA</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/febrero/5/index.html','Codo a Codo')">
+                            <img src="camp/febrero/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Codo a Codo</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="pt-page pt-page-2" id="marzo">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volvermarzo()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS MARZO 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/1/index.html','La Transformación No Para')">
+                            <img src="camp/marzo/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Transformación No Para</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/2/index.html','Festival La Vendimia BA')">
+                            <img src="camp/marzo/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Festival La Vendimia BA</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/3/index.html','Jóvenes X los DDHH')">
+                            <img src="camp/marzo/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Jóvenes X los DDHH</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/4/index.html','Patio Gastronómico y Desafío de Cocina de las Colectividades')">
+                            <img src="camp/marzo/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Patio Gastronómico y Desafío <br> de Cocina de las Colectividades</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/5/index.html','Feria CreatiBA')">
+                            <img src="camp/marzo/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Feria CreatiBA</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/6/index.html','Semana de las Milongas')">
+                            <img src="camp/marzo/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Semana de las Milongas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/7/index.html','Aprende Programando')">
+                            <img src="camp/marzo/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Aprende Programando</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/8/index.html','Programa Cultural en Barrios')">
+                            <img src="camp/marzo/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Programa Cultural en Barrios</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/9/index.html','Pintó Bodegón')">
+                            <img src="camp/marzo/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Pintó Bodegón</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- ABRIL -->
+            <div class="pt-page pt-page-2" id="abril">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volverabril()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS ABRIL 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/1/index.html','Vacunación gripe')">
+                            <img src="camp/abril/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación gripe</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/2/index.html','Practicas Formativas')">
+                            <img src="camp/abril/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Practicas Formativas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/3/index.html','Censo 2022')">
+                            <img src="camp/abril/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Censo 2022</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/4/index.html','La Bienal ')">
+                            <img src="camp/abril/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Bienal </span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/5/index.html','Día mundial del Malbec')">
+                            <img src="camp/abril/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Día mundial del Malbec</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/6/index.html','Podcast Malvinas 40 años')">
+                            <img src="camp/abril/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Podcast Malvinas 40 años</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/7/index.html','Campaña Cadetes')">
+                            <img src="camp/abril/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Campaña Cadetes</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/8/index.html','Reciclaje')">
+                            <img src="camp/abril/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Reciclaje</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/9/index.html','Instituto de Formación Política y Gestión Pública')">
+                            <img src="camp/abril/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Instituto de Formación Política y Gestión Pública</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- FIN ABRIL -->
+
+            <!-- MAYO -->
+            <div class="pt-page pt-page-2" id="mayo">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volvermayo()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS MAYO 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/1/index.html','Padrón Electoral Provisorio')">
+                            <img src="camp/mayo/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Padrón Electoral Provisorio</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/2/index.html','Vacunación Incentivos + 60')">
+                            <img src="camp/mayo/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Incentivos + 60</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/3/index.html','Campaña Ventilación de Espacios Cerrados')">
+                            <img src="camp/mayo/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Campaña Ventilación de Espacios Cerrados</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/4/index.html','Campaña Monóxido de Carbono')">
+                            <img src="camp/mayo/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Campaña Monóxido de Carbono</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/5/index.html','Vacunación 55- 59 - Condición de Riesgo')">
+                            <img src="camp/mayo/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación 55- 59 - Condición de Riesgo</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/6/index.html','Vacunación 50 - 54 - Condición de Riesgo')">
+                            <img src="camp/mayo/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación 50 - 54 - Condición de Riesgo</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/7/index.html','Concientización')">
+                            <img src="camp/mayo/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Concientización</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/8/index.html','Vacunación Covid 55-59')">
+                            <img src="camp/mayo/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid <br> 55-59</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/9/index.html','Vacunación Covid 50-54')">
+                            <img src="camp/mayo/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid <br> 50-54</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/10/index.html','FECA')">
+                            <img src="camp/mayo/10/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>FECA</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/mayo/11/index.html','Línea 144 Boti')">
+                            <img src="camp/mayo/11/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Línea 144 Boti</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- FIN MAYO -->
+
+
+
+            <!-- JUNIO -->
+            <div class="pt-page pt-page-2" id="junio">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volverjunio()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS JUNIO 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/junio/1/index.html','Nuevo Centro de Testeo - Comuna 11')">
+                            <img src="camp/junio/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Nuevo Centro de Testeo - Comuna 11</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/junio/2/index.html','Vacunación Covid 45-49')">
+                            <img src="camp/junio/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid  <br> 45-49</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/junio/3/index.html','Vacunación Covid +40')">
+                            <img src="camp/junio/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid +40</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/junio/4/index.html','Vacunación Covid Embarazadas y Lactantes')">
+                            <img src="camp/junio/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid Embarazadas y Lactantes</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/junio/5/index.html','Convocatoria Cadetes')">
+                            <img src="camp/junio/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Convocatoria Cadetes</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/junio/6/index.html','Centro de Testeo Docente')">
+                            <img src="camp/junio/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Centro de Testeo Docente</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- FIN JUNIO -->
+            <!-- JULIO -->
+            <div class="pt-page pt-page-2" id="julio">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volverjulio()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS JULIO 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/1/index.html','Vacaciones de Invierno')">
+                            <img src="camp/julio/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacaciones de Invierno</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/2/index.html','Tareas Parejas')">
+                            <img src="camp/julio/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Tareas Parejas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/3/index.html','Estemos en Tecnología')">
+                            <img src="camp/julio/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Estemos en Tecnología</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/4/index.html','AGIP')">
+                            <img src="camp/julio/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>AGIP</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/5/index.html','Turismo interior - Institucional')">
+                            <img src="camp/julio/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Turismo interior - Institucional</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/6/index.html','Turismo interior - Vacaciones de invierno')">
+                            <img src="camp/julio/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Turismo interior - Vacaciones de invierno</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/7/index.html','Vacunación Covid +35')">
+                            <img src="camp/julio/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid +35</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/8/index.html','Vacunación Covid +30')">
+                            <img src="camp/julio/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid +30</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/9/index.html','Vacunación Covid +25')">
+                            <img src="camp/julio/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid +25</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/10/index.html','Vacunación Covid +18')">
+                            <img src="camp/julio/10/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid +18</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/11/index.html','Campaña Vacunación Gripe V2')">
+                            <img src="camp/julio/11/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Campaña Vacunación Gripe V2</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/20/index.html','Calendario Vacunación Niños y Niñas')">
+                            <img src="camp/julio/20/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Calendario Vacunación Niños y Niñas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/12/index.html','Vacunación Covid 12 a 17 años con Condiciones Priorizadas')">
+                            <img src="camp/julio/12/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid 12 a 17 años con Condiciones Priorizadas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/13/index.html','Vacunación Covid - Seguí Cuidándote')">
+                            <img src="camp/julio/13/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid - Seguí Cuidándote</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/14/index.html','Vacaciones de Invierno Responsables')">
+                            <img src="camp/julio/14/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacaciones de Invierno Responsables</span> </p>
+                          </div>
+                        </div>
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/15/index.html','Convocatoria Cultura Abierta ')">
+                            <img src="camp/julio/15/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Convocatoria Cultura Abierta </span> </p>
+                          </div>
+                        </div> -->
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/16/index.html','La Bienal')">
+                            <img src="camp/julio/16/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Bienal</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/17/index.html','Mujeres y Startups')">
+                            <img src="camp/julio/17/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Mujeres y Startups</span> </p>
+                          </div>
+                        </div>
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/18/index.html','Carreras Priorizadas')">
+                            <img src="camp/julio/18/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Carreras Priorizadas</span> </p>
+                          </div>
+                        </div> -->
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/julio/19/index.html','Cursos de Contabilidad')">
+                            <img src="camp/julio/19/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Cursos de Contabilidad</span> </p>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- FIN JULIO -->
+
+
+            <!-- AGOSTO -->
+            <div class="pt-page pt-page-2" id="agosto">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volveragosto()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS AGOSTO 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/1/index.html','AGIP')">
+                            <img src="camp/agosto/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>AGIP</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/2/index.html','Elecciones Legislativas')">
+                            <img src="camp/agosto/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Elecciones Legislativas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/3/index.html','Turismo Internacional')">
+                            <img src="camp/agosto/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Turismo Internacional</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/4/index.html','Campaña Donación de Sangre')">
+                            <img src="camp/agosto/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Campaña Donación de Sangre</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/5/index.html','Campaña Testeate')">
+                            <img src="camp/agosto/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Campaña Testeate</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/6/index.html','Combinación de Vacunas')">
+                            <img src="camp/agosto/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Combinación de Vacunas</span> </p>
+                          </div>
+                        </div>
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/7/index.html','BA Celebra Líbano')">
+                            <img src="camp/agosto/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>BA Celebra Líbano</span> </p>
+                          </div>
+                        </div> -->
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/8/index.html','BADA')">
+                            <img src="camp/agosto/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>BADA</span> </p>
+                          </div>
+                        </div> -->
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/9/index.html','El Obrador')">
+                            <img src="camp/agosto/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>El Obrador</span> </p>
+                          </div>
+                        </div> -->
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/agosto/10/index.html','La Noche de la Gastronomía')">
+                            <img src="camp/agosto/10/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Noche de la Gastronomía</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- FIN AGOSTO -->
+
+
+            <!-- SEPTIEMBRE -->
+            <div class="pt-page pt-page-2" id="septiembre">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volverseptiembre()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS SEPTIEMBRE 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/1/index.html','Pre Cosquín')">
+                            <img src="camp/septiembre/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Pre Cosquín</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/2/index.html','Festival de Colectividades')">
+                            <img src="camp/septiembre/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Festival de Colectividades</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/3/index.html','Expedición Clave')">
+                            <img src="camp/septiembre/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Expedición Clave</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/4/index.html','Visuales Sonoras')">
+                            <img src="camp/septiembre/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Visuales Sonoras</span> </p>
+                          </div>
+                        </div> -->
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/5/index.html','FED')">
+                            <img src="camp/septiembre/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>FED</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/6/index.html','Portal Mi Primer Trabajo')">
+                            <img src="camp/septiembre/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Portal Mi Primer Trabajo</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/7/index.html','Vacunación Covid 12 a 17 años')">
+                            <img src="camp/septiembre/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vacunación Covid 12 a 17 años</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/8/index.html','Elecciones Seguras')">
+                            <img src="camp/septiembre/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Elecciones Seguras</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/septiembre/9/index.html','Plan de Futuro - Etapa 1')">
+                            <img src="camp/septiembre/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Plan de Futuro <br> Etapa 1</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- FIN SEPTIEMBRE -->
+
+            <!-- octubre -->
+            <div class="pt-page pt-page-2" id="octubre">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volveroctubre()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS OCTUBRE 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/1/index.html','Expo Joven 2022')">
+                            <img src="camp/octubre/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Expo Joven 2022</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/2/index.html','Empadronamiento Vacunación Covid 3 a 11 Años con Condiciones Priorizadas')">
+                            <img src="camp/octubre/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Empadronamiento Vacunación Covid 3 a 11 Años con Condiciones Priorizadas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/3/index.html','Ciudad Emergente')">
+                            <img src="camp/octubre/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Ciudad Emergente</span> </p>
+                          </div>
+                        </div>
+                        <!-- <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/4/index.html','Charly BA')">
+                            <img src="camp/octubre/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Charly BA</span> </p>
+                          </div>
+                        </div> -->
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/5/index.html','La Noche de los Teatros')">
+                            <img src="camp/octubre/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Noche de los Teatros</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/6/index.html','Semana #OrgulloBA')">
+                            <img src="camp/octubre/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Semana #OrgulloBA</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/7/index.html','La Noche de los Museos')">
+                            <img src="camp/octubre/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Noche de los Museos</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/8/index.html','Plan de Futuro - Etapa 2')">
+                            <img src="camp/octubre/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Plan de Futuro <br> Etapa 2</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/9/index.html','Acoso Callejero')">
+                            <img src="camp/octubre/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Acoso Callejero</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/10/index.html','La Noche de las Librerías')">
+                            <img src="camp/octubre/10/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Noche de las Librerías</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/octubre/11/index.html','Empadronamiento Vacunación Covid 3 a 11 Años ')">
+                            <img src="camp/octubre/11/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Empadronamiento Vacunación Covid 3 a 11 Años </span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- FIN octubre -->
+
+            <div class="pt-page pt-page-2" id="noviembre">
+              <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volvernoviembre()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS NOVIEMBRE 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/1/index.html','Mes de la Cultura Independiente')">
+                            <img src="camp/noviembre/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Mes de la Cultura Independiente</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/2/index.html','Vuelta al Transporte Público')">
+                            <img src="camp/noviembre/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Vuelta al Transporte Público</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/3/index.html','Línea 144')">
+                            <img src="camp/noviembre/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Línea 144</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/4/index.html','Elecciones Seguras')">
+                            <img src="camp/noviembre/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Elecciones Seguras</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/5/index.html','La Nochecita')">
+                            <img src="camp/noviembre/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Nochecita</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/6/index.html','Universidad de la Ciudad')">
+                            <img src="camp/noviembre/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Universidad de la Ciudad</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/7/index.html','Plan de Futuro - Etapa 3')">
+                            <img src="camp/noviembre/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Plan de Futuro <br> Etapa 3</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/8/index.html','Sabor Federal')">
+                            <img src="camp/noviembre/8/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Sabor Federal</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/noviembre/9/index.html','Agencia de Aprendizaje')">
+                            <img src="camp/noviembre/9/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Agencia de Aprendizaje</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="pt-page pt-page-2" id="diciembre">
+                <div class="overlay">
+                  <div class="container">
+                    <div class="headerback">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#" class="back" onclick="volverdiciembre()">⬅ VOLVER</a>
+                        </div>
+                        <div class="col-lg-4 text-center" style="color:#000">
+                          CAMPAÑAS DICIEMBRE 2022
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row listcamp">
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/diciembre/1/index.html','Amor de Verano')">
+                            <img src="camp/diciembre/1/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Amor de Verano</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/diciembre/2/index.html','Festejos Responsables Fiestas')">
+                            <img src="camp/diciembre/2/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Festejos Responsables Fiestas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/diciembre/3/index.html','Consejos Altas temperaturas')">
+                            <img src="camp/diciembre/3/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Consejos Altas Temperaturas</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/diciembre/4/index.html','La Noche de las Galerías')">
+                            <img src="camp/diciembre/4/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Noche de las Galerías</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/diciembre/5/index.html','La Noche de los Templos')">
+                            <img src="camp/diciembre/5/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Noche de los Templos</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/diciembre/6/index.html','La Noche de la Música')">
+                            <img src="camp/diciembre/6/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>La Noche de la Música</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/diciembre/7/index.html','Calle Compartida Libertador')">
+                            <img src="camp/diciembre/7/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Calle Compartida Libertador</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+            <script>
+            var mysample = '';
+            function setval(varval)
+            {
+            	mysample= varval;
+            }
+
+            </script>
+
+
+
+            <div class="pt-page pt-page-3" id="page3">
+              <div class="overlay">
+                <div class="container">
+                  <div class="headerback">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <a href="#" class="back" onclick="volver2(mysample)">⬅ VOLVER</a>
+                      </div>
+                      <div class="col-lg-4 text-center"  id="titlecamp">
+                        CAMPAÑAS 2022
+                      </div>
+                      <div class="col-lg-4">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row listcamp">
+                    <iframe src="" width="" height="" id="iframepage2"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> PAGE 4</h1></div>
+            <div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> PAGE 5</h1></div>
+            <div class="pt-page pt-page-6"><h1><span>A collection of</span><strong>Page</strong> PAGE 6</h1></div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="js/jquery.dlmenu.js"></script>
+      <script src="js/pagetransitions.js"></script>
+  </body>
+</html>
